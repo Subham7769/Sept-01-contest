@@ -63,21 +63,16 @@ function checkAgeAbove25() {
 }
 
 // 7. Unique Professions
-function uniqueProfessions() {
-
-}
+function uniqueProfessions() {}
 
 // 8. Sort by Age
-function sortByAge() {
-  data.sort((a,b)=>a.age-b.age);
-  console.log(data);
-}
+function sortByAge() {}
 
 // 9. Update Profession
 function updateJohnsProfession() {
   data.forEach((element, index) => {
     if(data[index].name === "john"){
-      let newProfession = prompt("Please enter new profession for john");
+      let newProfession = prompt("Please enter new name for john");
       data[index].profession = newProfession;
   console.log("updated profession: "+ newProfession);
     }
